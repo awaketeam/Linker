@@ -36,5 +36,9 @@ flutter run
 
 ## 贡献说明
 ### 内部协作
+1. 创建开发分支feat_yourbranch，进行开发
+1. 创建 `pull request`，选择 `base:dev` `compare:feat_yourbranch`，并指定 `Reviewers`
+1. 经过代码审核后会被合并到 `dev` 分支
+1. 经过多轮迭代以及充分测试后会被合入 `master` 分支
 
 ### 第三方共建
