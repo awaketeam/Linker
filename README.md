@@ -36,9 +36,16 @@ flutter run
 
 ## 贡献说明
 ### 内部协作
+#### 流程
 1. 创建开发分支feat_yourbranch，进行开发
 1. 创建 `pull request`，选择 `base:dev` `compare:feat_yourbranch`，并指定 `Reviewers`
 1. 经过代码审核后会被合并到 `dev` 分支
 1. 经过多轮迭代以及充分测试后会被合入 `master` 分支
+
+#### 分支说明
+`master` 版本发布分支
+`dev` 开发主分支，用于版本迭代，持续集成
+`feat_xxx_xxx` 特性（feature）开发分支，命名方式 `feat_模块` 或 `feat_模块_子模块`
+`fix_xxx_xxx` bug修复分支，命名方式 `fix_模块` 或 `fix_issue_问题id`
 
 ### 第三方共建
