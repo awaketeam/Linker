@@ -1,0 +1,17 @@
+platform :ios, '10.0'
+
+target "Runner" do
+
+    pod 'MJRefresh', '~> 3.1.15'
+    pod 'MJExtension', '~> 3.0.13'
+    pod 'SDWebImage', '~>4.4.2'
+    pod 'AFNetworking', '~>3.1.0'
+    pod 'BlocksKit', '~> 2.2.5'
+    pod 'Masonry'
+    pod 'IQKeyboardManager'
+    pod 'SVProgressHUD'
+    pod 'UMengAnalytics-NO-IDFA', '~> 4.2.5'
+    pod 'YYText', '~> 1.0.7'
+    pod 'MagicalRecord', '~> 2.3.2'
+
+end

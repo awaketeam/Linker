@@ -1,0 +1,88 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - IQKeyboardManager (6.5.4)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.17)
+  - MJRefresh (3.1.17)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SVProgressHUD (2.2.5)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BlocksKit (~> 2.2.5)
+  - IQKeyboardManager
+  - MagicalRecord (~> 2.3.2)
+  - Masonry
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.15)
+  - SDWebImage (~> 4.4.2)
+  - SVProgressHUD
+  - UMengAnalytics-NO-IDFA (~> 4.2.5)
+  - YYText (~> 1.0.7)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BlocksKit
+    - IQKeyboardManager
+    - MagicalRecord
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - SVProgressHUD
+    - UMengAnalytics-NO-IDFA
+    - YYText
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 65e42802bb7590328d6dfc06bfddf4ab14a19fed
+
+COCOAPODS: 1.8.4
