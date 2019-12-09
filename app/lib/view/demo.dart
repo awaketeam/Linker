@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'view/app.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class DemoApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -93,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'kx have pushed the button this many times:',
+              'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
