@@ -35,25 +35,30 @@ class _ImprotWalletState extends State<ImprotWallet> {
 
   _getListData(){
 
-    var eosWalletEntry = new _WalletEntry();
-    eosWalletEntry.title = 'EOS';
-    eosWalletEntry.imgPath = 'images/EOS.png';
+    var eosWalletEntry = new _WalletEntry(
+        title: 'EOS',
+        imgPath: 'images/EOS.png',
+    );
 
-    var eosForceWalletEntry = new _WalletEntry();
-    eosForceWalletEntry.title = 'EOSForce';
-    eosForceWalletEntry.imgPath = 'images/EOSC.png';
+    var eosForceWalletEntry = new _WalletEntry(
+      title: 'EOSForce',
+      imgPath: 'images/EOSC.png',
+    );
 
-    var telosWalletEntry = new _WalletEntry();
-    telosWalletEntry.title = 'Telos';
-    telosWalletEntry.imgPath = 'images/TELOS.png';
+    var telosWalletEntry = new _WalletEntry(
+      title: 'Telos',
+      imgPath: 'images/TELOS.png',
+    );
 
-    var bosWalletEntry = new _WalletEntry();
-    bosWalletEntry.title = 'BOS';
-    bosWalletEntry.imgPath = 'images/BOS.png';
+    var bosWalletEntry = new _WalletEntry(
+      title: 'BOS',
+      imgPath: 'images/BOS.png',
+    );
 
-    var vexWalletEntry = new _WalletEntry();
-    vexWalletEntry.title = 'VEX';
-    vexWalletEntry.imgPath = 'images/VEX.png';
+    var vexWalletEntry = new _WalletEntry(
+      title: 'VEX',
+      imgPath: 'images/VEX.png',
+    );
 
     List<_WalletEntry> walletEntrys = [
       eosWalletEntry,
@@ -89,8 +94,8 @@ class WalletCellView extends StatelessWidget{
         color: Colors.grey[100],
         height: MediaQuery.of(context).size.height,
         child: new ListView.builder(
-          itemCount: walletEntrys.length,
-           itemBuilder:(context,index){
+            itemCount: walletEntrys.length,
+            itemBuilder:(context,index){
              return Container(
                  padding: const EdgeInsets.all(16.0),
                  child:GestureDetector(
@@ -103,7 +108,6 @@ class WalletCellView extends StatelessWidget{
                          color: Colors.white,
                          border: new Border.all(width: 1, color: Colors.white),
                        ),
-
 
                        padding: const EdgeInsets.all(16.0),
                        child: Row(
