@@ -94,3 +94,4 @@ gen
 .gitignore
 .idea/encodings.xml
 .idea/inspectionProfiles/
+/.idea/
