@@ -17,47 +17,47 @@ class ImportWalletList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ImprotWallet(title: '创建钱包');
+    return ImportWallet(title: '创建钱包');
   }
 }
 
 
-class ImprotWallet extends StatefulWidget {
-  ImprotWallet({Key key, this.title}) : super(key: key);
+class ImportWallet extends StatefulWidget {
+  ImportWallet({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _ImprotWalletState createState() => _ImprotWalletState();
+  _ImportWalletState createState() => _ImportWalletState();
 }
 
-class _ImprotWalletState extends State<ImprotWallet> {
+class _ImportWalletState extends State<ImportWallet> {
 
   _getListData(){
 
     var eosWalletEntry = new _WalletEntry(
         title: 'EOS',
-        imgPath: 'images/EOS.png',
+        imgPath: 'assets/images/EOS.png',
     );
 
     var eosForceWalletEntry = new _WalletEntry(
       title: 'EOSForce',
-      imgPath: 'images/EOSC.png',
+      imgPath: 'assets/images/EOSC.png',
     );
 
     var telosWalletEntry = new _WalletEntry(
       title: 'Telos',
-      imgPath: 'images/TELOS.png',
+      imgPath: 'assets/images/TELOS.png',
     );
 
     var bosWalletEntry = new _WalletEntry(
       title: 'BOS',
-      imgPath: 'images/BOS.png',
+      imgPath: 'assets/images/BOS.png',
     );
 
     var vexWalletEntry = new _WalletEntry(
       title: 'VEX',
-      imgPath: 'images/VEX.png',
+      imgPath: 'assets/images/VEX.png',
     );
 
     List<_WalletEntry> walletEntrys = [
