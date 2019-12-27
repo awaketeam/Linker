@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'create_wallet.dart';
 class ImportWalletPage extends StatelessWidget {
   const ImportWalletPage({Key key}) : super(key: key);
 
@@ -16,6 +16,13 @@ class ImportWalletPage extends StatelessWidget {
             Text(
               '导入钱包页面',
             ),
+            MaterialButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ImportWalletList();
+                }));
+              },
+            )
           ],
         ),
       )
