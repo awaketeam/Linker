@@ -19,7 +19,12 @@ class DevNetworkPage extends StatelessWidget {
                   Text(
                     '/v1/chain/get_info 返回信息',
                   ),
-                  DeveloperList(),
+                  NetworkTest(path: "http://openapi.eos.ren/v1/chain/get_info"),
+                  Text(
+                    '错误请求 返回信息',
+                  ),
+                  NetworkTest(
+                      path: "http://openapi.eos.r1en/v1/chain/get_info"),
                 ],
               ),
             ),
@@ -28,26 +33,30 @@ class DevNetworkPage extends StatelessWidget {
   }
 }
 
-Future<String> mockNetworkData() async {
+Future<String> mockNetworkData(String path) async {
   Network network = Network();
-  Response response =
-      await network.get("http://openapi.eos.ren/v1/chain/get_info");
+  Response response = await network.get(path);
   return response.data.toString();
 }
 
-class DeveloperList extends StatefulWidget {
-  DeveloperList({Key key}) : super(key: key);
+class NetworkTest extends StatefulWidget {
+  String path;
+  NetworkTest({Key key, this.path}) : super(key: key);
 
   @override
-  _DeveloperListState createState() => _DeveloperListState();
+  _NetworkTestState createState() => _NetworkTestState(path: path);
 }
 
-class _DeveloperListState extends State<DeveloperList> {
+class _NetworkTestState extends State<NetworkTest> {
+  String path;
+
+  _NetworkTestState({this.path});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       child: FutureBuilder<String>(
-        future: mockNetworkData(),
+        future: mockNetworkData(path),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           // 请求已结束
           if (snapshot.connectionState == ConnectionState.done) {
