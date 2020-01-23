@@ -1,12 +1,18 @@
+import 'package:app/db/student_entity.dao.dart';
+import 'package:app/db/student_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:app/route/index.dart';
+import 'package:yun_dao/db_manager.dart';
 import 'home/index.dart';
 import 'dapp/index.dart';
 import 'mine/index.dart';
+import 'package:path_provider/path_provider.dart';
+
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    _initDb();
     return MaterialApp(
       title: 'Linker',
       theme: ThemeData(
@@ -16,6 +22,15 @@ class App extends StatelessWidget {
       home: AppPage(),
     );
   }
+}
+void _initDb() async {
+  var appDocDir = await getApplicationDocumentsDirectory();
+  String appDocPath = appDocDir.path;
+  print(appDocPath);
+  DBManager dbManager = new DBManager();
+  await dbManager.initByPath(1, appDocPath, "test.db");
+
+  StudentEntityDao.init();
 }
 
 class AppPage extends StatefulWidget {
@@ -89,4 +104,14 @@ class _AppPageState extends State<AppPage> {
   Widget page() {
     return _pageMap[_selectedIndex].widget;
   }
+
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    DBManager dbManager = DBManager();
+    dbManager.close();
+    super.dispose();
+  }
+
 }

@@ -24,6 +24,9 @@ class HomePage extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, "transfer");
             },
+          ),
+          Text(
+            '首页',
           )
         ],
       ),
